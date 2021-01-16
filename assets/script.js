@@ -22,7 +22,7 @@ function randomColor(el) {
 
 //menampilkan angka random 0 sd 6
 function pickColor() {
-    var random = Math.floor(Math.random() * 6) //color lenght adalah 6
+    var random = Math.floor(Math.random() * color.length) //color lenght bisa 3 dan 6 tergantung kondisi
     //random isinya angka 0 sd 6
     return color[random]//akan menghasilkan 1 warna dari acak warna via color = randomColor(numSquare)
 }
@@ -52,6 +52,8 @@ function reset() {
     
 }
 
+
+
 //function untuk timpa warna pada semua kotak, warna yang bener
 function correctColor(el) {
     for (var i = 0; i < square.length; i++) {
@@ -78,7 +80,7 @@ function setupSquare(){
             } else {
                 result.innerHTML = 'FALSE'
                 result.style.color = 'red'
-                this.remove() // pas false hilang square nya
+                this.style.backgroundColor = 'white' // pas false hilang square nya
             }
 
         })
@@ -118,6 +120,7 @@ var colorDisplay = document.getElementById('colorDisplay')
 
 
 
+
 function init() {
 
     setupButtonMode();
@@ -129,8 +132,8 @@ init();
 
 
 
+
 resetButton.addEventListener('click', function () {
 
     reset();
 })
-
