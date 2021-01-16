@@ -1,0 +1,77 @@
+body {
+
+    margin: 0; /* untuk menghilangkan space hitam di kanan kiri */
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.square {
+
+    width: 30%;  /* panjang horizontal */
+    background-color: blueviolet;
+    padding-bottom: 30%; /* panjang kebawaah */
+    margin: 1.66%; /* untuk pemisah grid */
+    float: left; /* untuk rata ke tengah */
+    border-radius: 15%; /* untuk rounded */
+    transition: all 0.3s; /* untuk transisi */
+}
+
+#container {
+    max-width: 70%;    /* ukuran kotak */
+    margin: 10px auto; /* margin atas */
+}
+
+h1 {
+    text-align: center;
+    margin: 0; /* untuk menghilangkan space hitam di kanan kiri */
+    padding: 20px 0;
+    line-height: 1.1;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#stripe {
+    background-color: rgba(146, 146, 146, 0.5);
+    height: 30px;
+    text-align: center;
+}
+
+.selected {
+    color: white;
+    background-color: steelblue;
+}
+
+#colorDisplay {
+    font-size: 200%;
+}
+
+button { 
+    border: none; /* untuk menghilangkan border button */
+    background: none; /* untuk menghilangkan background button */
+    font-size: inherit; /* untuk mengambil size parent */ /* sifat mewakili */
+    text-transform: uppercase;
+    height: 100%;    /* supaya pas di tengah */
+    font-weight: 700;
+    transition: all 0.3s;   /* transisisi fade */
+    outline: none; /* menghilangkan garis kotak */
+
+}
+
+#result {
+    display: inline-block; /* untuk memisahkan */
+    width: 20%;  /* untuk jarak memisahkan */
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    color: white;
+    background-color: steelblue;
+
+}
+
+@media (min-width: 900px){
+    #container {
+        max-width: 40%;    /* ukuran kotak */
+    }
+}
