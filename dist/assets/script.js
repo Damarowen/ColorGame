@@ -52,6 +52,8 @@ function reset() {
     
 }
 
+
+
 //function untuk timpa warna pada semua kotak, warna yang bener
 function correctColor(el) {
     for (var i = 0; i < square.length; i++) {
@@ -118,6 +120,7 @@ var colorDisplay = document.getElementById('colorDisplay')
 
 
 
+
 function init() {
 
     setupButtonMode();
@@ -133,4 +136,3 @@ resetButton.addEventListener('click', function () {
 
     reset();
 })
-
