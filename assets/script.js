@@ -132,7 +132,6 @@ init();
 
 
 
-
 resetButton.addEventListener('click', function () {
 
     reset();
